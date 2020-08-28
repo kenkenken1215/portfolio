@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+}
+
+.navigation {
+    color: white;
+    background-color: #007BC7;
+    line-height: 80px;
+    width: 100%;
+}
+
+.title {
+    font-size: 30px;
+    padding-left: 20%;
+    font-weight: bold;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-box li {
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex
+}
+
+.flex-box {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+}
+
+.btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #138ad4;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-flat-border:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.header {
+    /* 背景画像の指定方法 */
+    background-image: url(../img/caravansary-4516601_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+}
+
+.header-text {
+    /* position: absolute;
+    top: 250px;
+    left: 100px; */
+    text-align: center;
+    padding-top: 200px;
+}
+
+.jinsei {
+    color: white;
+    font-size: 30px;
+}
+
+.hyoudai {
+    color: white;
+    font-size: 20px
+}
+
+main {
+    font-family: serif;
+}
+
+.main1 {
+    width: 100%;
+    text-align: center;
+    height: 560px;
+}
+
+th {
+    text-align: right;
+}
+
+.table1 {
+    padding-top: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.main2 {
+    background-image: url(../img/barley-field-1684052_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 750px;
+    width: 100%;
+}
+
+.main3 {
+    height: 700px;
+    width: 100%;
+}
+
+.kasen:first-letter {
+    color: #007BC7
+}
+
+.main1-2 {
+    display: flex
+}
+
+.heading-container {
+    text-align: center;
+}
+
+h2.kasen {
+    margin-top: 40px;
+    display: inline-block;
+    width: 100px;
+    position: relative;
+}
+
+
+/* 擬似要素を使い、空のアイテムを仕込む方法*/
+
+h2.kasen::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+    width: 50px;
+    border: 1px solid #007BC7;
+}
+
+.prof {
+    position: relative;
+    display: flex;
+}
+
+.profimg {
+    width: 300px;
+    height: 200px;
+    left: 100px;
+}
+
+.items {
+    justify-content: space-evenly;
+    margin: 0 16px;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item1 {
+    max-width: 400px;
+    width: 100%;
+    /* height: 180px; */
+    text-align: left;
+    background-color: rgba(226, 236, 236, 0.637);
+    border: 5px solid white;
+    border-radius: 3rem;
+}
+
+.item2 {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    /* height: 180px; */
+    text-align: left;
+    background-color: rgba(226, 236, 236, 0.637);
+    border: 5px solid white;
+    border-radius: 3rem;
+}
+
+.item3 {
+    max-width: 400px;
+    width: 100%;
+    /* height: 180px; */
+    text-align: left;
+    background-color: rgba(226, 236, 236, 0.637);
+    border: 5px solid white;
+    border-radius: 3rem;
+}
+
+.items p {
+    text-indent: 1em;
+}
+
+.item1 h3,
+.item2 h3,
+.item3 h3 {
+    text-align: center;
+    color: #007BC7;
+    margin-top: 10px;
+}
+
+.mokuhyo {
+    font-size: 25px;
+    color: #007BC7;
+    margin-top: 20px;
+}
+
+.kuhaku {
+    margin-top: 60px;
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+
+/*要素の位置を操作する*/
+
+.kuhaku2 {
+    margin-top: 20px;
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+.kuhaku3 {
+    margin-top: 100px;
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+.parent {
+    position: relative;
+    height: 700px;
+    text-align: center;
+}
+
+.parent .saikabu {
+    position: absolute;
+    font-size: 50px;
+    color: #007BC7;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    border-bottom: 0px;
+}
+
+.btn-flat-border2 {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #138ad4;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    border-radius: 30px 30px 30px 30px;
+    font-weight: bold;
+    font-size: 30px;
+    outline: none;
+}
+
+.btn-flat-border2:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+footer {
+    padding-top: 10%;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #007BC7;
+}
+
+footer p {
+    margin-top: 20px;
+}
